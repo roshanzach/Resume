@@ -1,25 +1,513 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roshan Rajesh | B.Tech Computer Science Portfolio & Resume</title>
+    <meta name="description"
+        content="Professional portfolio and resume of Roshan Rajesh, a B.Tech Computer Science student at College of Engineering Kidangoor. Specialized in full-stack web development, Python, MongoDB, and software architecture.">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+
+    <!-- Background Decorative Elements -->
+    <div class="blob-container">
+        <div class="blob blob-1" id="blob-1"></div>
+        <div class="blob blob-2" id="blob-2"></div>
+        <div class="blob blob-3" id="blob-3"></div>
+    </div>
+
+    <!-- Print-only Header -->
+    <div class="print-header">
+        <h1 style="font-size: 28pt; margin-bottom: 5px;">Roshan Rajesh</h1>
+        <p style="font-size: 14pt; color: #0891b2; margin-bottom: 10px; font-weight: bold;">B.Tech Computer Science
+            Student</p>
+        <p style="margin-bottom: 5px;">
+            <strong>Email:</strong> roshanrajesh369@gmail.com |
+            <strong>Phone:</strong> +91 8921182286 |
+            <strong>Location:</strong> Kerala, India
+        </p>
+        <p style="margin-bottom: 15px; border-bottom: 2px solid #000; padding-bottom: 10px;">
+            <strong>GitHub:</strong> github.com/roshanzach |
+            <strong>LinkedIn:</strong> linkedin.com/in/roshanrajesh
+        </p>
+        <div style="margin-bottom: 15px;">
+            <h3>Professional Summary</h3>
+            <p>Computer Science student with experience in building full-stack web applications. Comfortable working on
+                both the frontend UI and backend logic, including setting up databases and writing basic APIs. A
+                practical problem solver who works well in team environments.</p>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
     <header>
-        <h1>My Resume</h1>
+        <div class="nav-container">
+            <a href="#about" class="logo" id="nav-logo">Roshan Rajesh</a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section id="about" class="hero-wrapper reveal">
+            <div class="hero-content">
+                <div class="hero-badge" id="hero-badge">
+                    <i class="fa-solid fa-circle-check"></i> Available for Immediate Internships & Opportunities
+                </div>
+                <h1>Hi, I'm <span>Roshan Rajesh</span></h1>
+                <h2>B.Tech Computer Science & Engineering Student</h2>
+                <p>
+                    Computer Science student with experience in building full-stack web applications.
+                    Comfortable working on both the frontend UI and backend logic, including setting up
+                    databases and writing basic APIs. A practical problem solver who works well in team
+                    environments.
+                </p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary" id="btn-cta-contact">
+                        <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <button onclick="window.print()" class="btn btn-secondary" id="btn-cta-print">
+                        <i class="fa-solid fa-download"></i> Download Resume PDF
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Layout Grid -->
+        <div class="grid-2">
+
+            <!-- Left Column: Education, Experience & Projects -->
+            <div>
+                <!-- Education Section -->
+                <section id="education" style="padding-top: 2rem;" class="reveal">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <p class="section-subtitle">Academic Journey</p>
+                        <h2 class="section-title" style="font-size: 2rem;">Education</h2>
+                    </div>
+                    <div class="timeline">
+                        <!-- B.Tech -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-title">Bachelor of Technology in Computer Science &
+                                            Engineering</h3>
+                                        <div class="timeline-institution">College of Engineering Kidangoor</div>
+                                    </div>
+                                    <span class="timeline-date">2023 - Present</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>APJ Abdul Kalam Technological University (KTU)</p>
+                                    <p style="margin-top: 0.25rem; font-weight: 500; color: var(--text-primary);">
+                                        Currently finished Semester 6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- HSE -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-title">Higher Secondary (HSE)</h3>
+                                        <div class="timeline-institution">MT Seminary HSS, Kottayam</div>
+                                    </div>
+                                    <span class="timeline-date">2021 - 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Graduated in 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 10th -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-title">10th CBSE</h3>
+                                        <div class="timeline-institution">Emmaus Public School, Kottayam</div>
+                                    </div>
+                                    <span class="timeline-date">2020 - 2021</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Graduated in 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section id="experience" style="padding-top: 4rem;" class="reveal">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <p class="section-subtitle">Professional Training</p>
+                        <h2 class="section-title" style="font-size: 2rem;">Work Experience</h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-title">Machine Learning Internship</h3>
+                                        <div class="timeline-institution">Jyesta Corporate Entity</div>
+                                    </div>
+                                    <span class="timeline-date">Internship Verified</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul style="margin-bottom: 1.25rem;">
+                                        <li>Studied Machine Learning algorithms and learned how to clean and prepare raw
+                                            datasets for training.</li>
+                                        <li>Used Python to implement, evaluate, and test basic ML models.</li>
+                                    </ul>
+                                    <a href="https://lms.jyesta.com/verify-certificate/JC-20250816-IY2T1PC7"
+                                        target="_blank" class="btn btn-secondary"
+                                        style="padding: 0.5rem 1.2rem; font-size: 0.85rem;" id="btn-verify-cert">
+                                        <i class="fa-solid fa-certificate"></i> Verify Certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects" style="padding-top: 4rem;" class="reveal">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <p class="section-subtitle">Showcase Portfolio</p>
+                        <h2 class="section-title" style="font-size: 2rem;">Featured Projects</h2>
+                    </div>
+                    <div class="glass-card project-card" id="project-smart-money">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <h3 class="project-title">"Smart Money" (Personal Finance Tracker)</h3>
+                        <p class="project-desc">
+                            A personal finance web application built independently to help users log daily expenses,
+                            track their total savings, and set a monthly budget to be saved.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB (Mongoose)</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <h4 class="project-tasks-title">Key Accomplishments</h4>
+                        <ul class="project-tasks">
+                            <li>Designed the database structure to securely store user profiles and financial
+                                transaction history.</li>
+                            <li>Created backend API endpoints to handle user actions like adding expenses, updating
+                                budgets, and managing transactions.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column: Technical & Engineering Skills -->
+            <div>
+                <section id="skills" style="padding-top: 2rem;" class="reveal">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <p class="section-subtitle">Core Capabilities</p>
+                        <h2 class="section-title" style="font-size: 2rem;">Skills & Certifications</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <!-- Programming Languages -->
+                        <div class="skills-card" id="skill-card-languages">
+                            <h3 class="skills-card-title">
+                                <i class="fa-solid fa-code"></i> Programming Languages
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <!-- Databases & Tools -->
+                        <div class="skills-card" id="skill-card-databases">
+                            <h3 class="skills-card-title">
+                                <i class="fa-solid fa-database"></i> Databases & Tools
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Mongoose</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">Linux / Unix Terminal</span>
+                            </div>
+                        </div>
+
+                        <!-- Software Engineering Practices -->
+                        <div class="skills-card" id="skill-card-practices">
+                            <h3 class="skills-card-title">
+                                <i class="fa-solid fa-gears"></i> SE Practices
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Architecture Design</span>
+                                <span class="skill-tag">Modular Architecture</span>
+                                <span class="skill-tag">Component-based Architecture</span>
+                                <span class="skill-tag">Full-Stack Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="section-header">
+                <p class="section-subtitle">Let's Connect</p>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="glass-card contact-grid">
+                <!-- Contact Info Column -->
+                <div class="contact-info">
+                    <div>
+                        <h3 style="font-size: 1.5rem; font-family: var(--font-heading); margin-bottom: 1rem;">Let's
+                            collaborate on something impactful</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2.5rem;">I'm currently seeking
+                            internships and junior software developer roles. Drop a message or reach out via
+                            email/phone.</p>
+
+                        <div class="contact-details">
+                            <a href="mailto:roshanrajesh369@gmail.com" class="contact-item" id="contact-email-link">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email Address</h4>
+                                    <p>roshanrajesh369@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+918921182286" class="contact-item" id="contact-phone-link">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone Number</h4>
+                                    <p>+91 8921182286</p>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <div class="contact-icon-wrapper">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Kerala, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Accounts -->
+                    <div>
+                        <h4
+                            style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem; font-family: var(--font-heading);">
+                            Professional Links</h4>
+                        <div class="social-platforms">
+                            <a href="https://github.com/roshanzach" target="_blank" class="social-btn"
+                                aria-label="GitHub" id="social-github-btn">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/roshanrajesh" target="_blank" class="social-btn"
+                                aria-label="LinkedIn" id="social-linkedin-btn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-form-submit">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#about" class="footer-logo">Roshan Rajesh</a>
+        <p class="footer-tagline">Building robust full-stack software and beautiful user interfaces.</p>
+        <p class="footer-copy">&copy; 2026 Roshan Rajesh. All Rights Reserved. Built with modern HTML5 & CSS3.</p>
+    </footer>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast" id="success-toast">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Your message has been sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // DOM Elements
+        const themeToggle = document.getElementById('theme-toggle');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const contactForm = document.getElementById('contact-form');
+        const successToast = document.getElementById('success-toast');
+        const scrollTopBtn = document.getElementById('scroll-to-top');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        // Theme Toggle Handler
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Mobile Menu Toggle Handler
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const isOpen = navMenu.classList.contains('open');
+            mobileMenuBtn.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a nav link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+
+        // Scroll Reveal Animation (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Reveal once
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Active Nav Link Selection on Scroll
+        window.addEventListener('scroll', () => {
+            let currentSec = '';
+            sections.forEach(sec => {
+                const sectionTop = sec.offsetTop;
+                const sectionHeight = sec.clientHeight;
+                if (pageYOffset >= (sectionTop - 250)) {
+                    currentSec = sec.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSec)) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Show/Hide Scroll to Top Button
+            if (pageYOffset > 500) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        // Scroll to Top Handler
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact Form Submission Handler (Mock API)
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Collect Form Details
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simple logging to simulate process
+            console.log(`Sending message from ${name} (${email}): ${message}`);
+
+            // Show Success Toast
+            successToast.classList.add('show');
+
+            // Reset Form Fields
+            contactForm.reset();
+
+            // Hide Success Toast after 4 seconds
+            setTimeout(() => {
+                successToast.classList.remove('show');
+            }, 4000);
+        });
+    </script>
 </body>
+
 </html>
